@@ -1,25 +1,34 @@
 import React, { useContext } from "react";
 import { CartContext } from "../code/ContaxtProvider";
 import CartProduct from "../code/CartProduct";
-import { totalItem, totalPrice } from "../code/CartReducer"
+import { totalItem, totalPrice } from "../code/CartReducer";
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
 
   return (
-    <div className="bg-gray-900 text-white">
-      <div className="p-5 bg-gray-900 lg:grid grid-cols-3 gap-4">
-        {cart.map((p) => (
-          <CartProduct product={p} />
-        ))}
-     </div>
-     <div>
-       <div>
-         <h5>Total Items: {totalItem(cart)}</h5>
-         <h5>Total Price: £{totalPrice(cart)}</h5>
-         <button>Check</button>
-       </div>
-     </div>
+    <div className="font-jost w-[100%] h-[100%]">
+      {cart.length === 0 ? (
+        <div className="text-center">
+          <h1 className="text-5xl"> Cart is empty </h1>
+        </div>
+      ) : (
+        <div className="p-5 flex justify-self-center items-center">
+          <div className="text-white text-center ">
+            <div className="p-5 gap-4 md:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+              {cart.map((p) => (
+                <CartProduct product={p} />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+      <div className="bg-blue-800 w-50 justify-self-center border-0.5 rounded-2xl p-4 text-white mt-10">
+        <div>
+          <h5> Total Items: {totalItem(cart)}</h5>
+          <h5> Total Price: ${totalPrice(cart)} </h5>
+        </div>
+      </div>
     </div>
   );
 };
