@@ -10,7 +10,7 @@ const Cart = () => {
     <div className="font-jost w-[100%] h-[100%]">
       {cart.length === 0 ? (
         <div className="text-center">
-          <h1 className="text-5xl"> Cart is empty </h1>
+          <h1 className="text-7xl"> Cart is empty </h1>
         </div>
       ) : (
         <div className="p-5 flex justify-self-center items-center">

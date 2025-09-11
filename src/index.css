@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @font-face {
   font-family: Jost;
   src: url("./assets/Jost-Regular.ttf");
@@ -7,4 +9,4 @@
   --font-jost: Jost, "sans-serif";
 }
 
-@import "tailwindcss";
+

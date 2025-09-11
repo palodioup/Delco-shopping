@@ -3,7 +3,7 @@ export const totalItem = (cart) => {
 }
 
 export const totalPrice = (cart) => {
-    return cart.reduce((total, product) => total + Math.round(product.quantity * product.price * 10) / 10 , 0)
+    return cart.reduce((total, product) => total + Math.round(product.price * product.quantity * 10) / 10 , 0)
 }
 
 const CartReducer = (state, action) => {
