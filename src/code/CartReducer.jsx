@@ -3,7 +3,7 @@ export const totalItem = (cart) => {
 }
 
 export const totalPrice = (cart) => {
-    return cart.reduce((total, product) => total + Math.round(product.price * product.quantity * 10) / 10 , 0)
+    return cart.reduce((total, product) => total + Math.round(product.quantity * product.price * 10) / 10 , 0)
 }
 
 const CartReducer = (state, action) => {
@@ -30,7 +30,7 @@ const CartReducer = (state, action) => {
 
     case "Decrease": 
       return state.map(p => 
-        p.id === action.id ? { ...p, quantity: p.quantity - 1 && p.quantity > 0} : p
+        p.id === action.id ? { ...p, quantity: p.quantity - 1 } : p
       )
 
     default:

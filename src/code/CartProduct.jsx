@@ -5,14 +5,14 @@ const CartProduct = ({ product }) => {
   const { dispatch } = useContext(CartContext);
 
   return (
-    <div className="border-2 text-black rounded-xl p-2 mb-10 w-100 border-gray-950">
+    <div className="border-2 text-black rounded-xl p-2 border-gray-950 text-center mb-10 w-75 sm:w-100 md:w-100 lg:w-100 xl:w-100">
       <div className="flex items-center justify-center">
         <img src={product.thumbnail} alt="" />
       </div>
       <h1>Category: {product.category}</h1>
       <h1>{product.title}</h1>
       <p>${product.price}</p>
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center">
         <div className="bg-blue-900 w-50 p-2 border-0.5 rounded-xl flex justify-center items-center text-white">
           <button
             className="bg-gray-950 mr-2 p-4 h-5 w-5 rounded-[25%] flex justify-center items-center"

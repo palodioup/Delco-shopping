@@ -5,7 +5,7 @@ const Product = ({ product }) => {
   const { dispatch } = useContext(CartContext);
 
   return (
-    <div className="w-100">
+    <div className="w-75 sm:w-100 md:w-100 lg:w-100 xl:w-100">
       <div className="font-normal p-3 border-2 rounded-2xl border-gray-950 text-gray-950">
         <img src={product.thumbnail} alt="" />
         <h1>Category: {product.category}</h1>

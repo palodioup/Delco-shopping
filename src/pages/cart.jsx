@@ -13,9 +13,9 @@ const Cart = () => {
           <h1 className="text-7xl"> Cart is empty </h1>
         </div>
       ) : (
-        <div className="p-5 flex justify-self-center items-center">
+        <div className="flex justify-self-center items-center">
           <div className="text-white text-center ">
-            <div className="p-5 gap-4 md:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="gap-4 md:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
               {cart.map((p) => (
                 <CartProduct product={p} />
               ))}
