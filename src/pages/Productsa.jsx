@@ -15,9 +15,9 @@ const Products = () => {
       </div>
       <div className="flex justify-center items-center">
         <div className="flex justify-center items-center grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
-      {products.map((p) => (
-        <Product product={p}/>
-      ))}
+          {products.map((p) => (
+            <Product product={p}/>
+          ))}
       </div>
       </div>
     </div>

@@ -28,6 +28,7 @@ const Nav = () => {
               </div>
             </Link>
           </li>
+
         </ul>
       </nav>
     </header>
