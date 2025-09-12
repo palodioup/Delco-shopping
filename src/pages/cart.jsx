@@ -27,6 +27,7 @@ const Cart = () => {
         <div>
           <h5> Total Items: {totalItem(cart)}</h5>
           <h5> Total Price: ${totalPrice(cart)} </h5>
+          <h1>Please do not refresh this page</h1>
         </div>
       </div>
     </div>
