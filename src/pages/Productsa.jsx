@@ -6,7 +6,7 @@ const Products = () => {
   const products = Data.products;
 
   return (
-    <div className="font-jost text-black w-[100%]">
+    <div className="font-jost text-black w-[100%] mt-55">
       <div>
         <div className="mb-40 p-10 text-center">
           <h1 className="text-6xl font-medium mb-5">Delco Shopping</h1>
