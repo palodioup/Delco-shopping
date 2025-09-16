@@ -11,8 +11,8 @@ const Nav = () => {
   const { cart } = useContext(CartContext)
  
   return (
-    <header className="font-jost text-black w-[100%] p-2 fixed bg-gray-200 top-0">
-      <nav className="p-10 w-[100%] flex items-center justify-between">
+    <header className="font-jost text-black w-[100%] fixed bg-gray-200 top-0">
+      <nav className="p-8 w-[100%] flex items-center justify-between">
         <div>
           <Link to="/">
             <img src={logoImg} alt="" className="size-12" />
