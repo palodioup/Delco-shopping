@@ -1,9 +1,6 @@
 import React, {useContext} from "react";
-import { FaTruck } from "react-icons/fa6";
-import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import logoImg from "../../assets/logoipsum-368.png";
-import { CiUser } from "react-icons/ci";
 import { Link } from "react-router-dom"
 import { CartContext } from "../../code/ContaxtProvider";
 
